@@ -6,12 +6,12 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: Build X64-D2550
 
 on:
   repository_dispatch:
   release:
-    types: published
+    types: [published]
   push:
     branches:
       - master
