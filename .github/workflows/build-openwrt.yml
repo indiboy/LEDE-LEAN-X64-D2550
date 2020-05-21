@@ -9,7 +9,6 @@
 name: Build X64-D2550
 
 on:
-  repository_dispatch:
   release:
     types: [published]
   push:
