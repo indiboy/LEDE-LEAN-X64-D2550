@@ -1,42 +1,24 @@
-# Actions-OpenWrt
+# D2550-LEAN-OPENWART 学习之用 请勿刷机
+自动从lean的lede源码clone并生成D2550固件 稍后上机器配置
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
+![.github/workflows/build-r3g.yml](https://github.com/indiboy/R3G/workflows/.github/workflows/build-r3g.yml/badge.svg)
 
-Build OpenWrt using GitHub Actions
+1.diy.sh
+可以编辑自定义和修改的脚本,可以直接修改JK预留的脚本,也可以自己编写
 
-[Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+2.d2550.config
+编辑自定义配置文件.
 
-## Usage
+3.以上修改完后push一下,即可自动编译固件成
 
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository, and the build starts automatically.Progress can be viewed on the Actions page.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
 
-### Tips
+如果你只想使用固件,可以在本项目的actions下下载最新编译的固件.
 
-It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
+==============================================
 
-Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
+![](/screenshots/d2550.png)
 
-## Acknowledgments
+==============================================
 
-- [Microsoft](https://www.microsoft.com)
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub](https://github.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cisco](https://www.cisco.com/)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-
-## License
-
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE) © P3TERX
+部分脚本内容参考以下项目特此感谢:
+https://github.com/P3TERX/Actions-OpenWrt/
