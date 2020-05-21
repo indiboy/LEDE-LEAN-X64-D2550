@@ -43,13 +43,13 @@ cp -f ../diy/mod-index.htm ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/
 # mkdir -p package/mine/parted && cp -i package/mine/luci-app-diskman/Parted.Makefile package/mine/parted/Makefile
 
 # HelloWorld
-sed -i 's/#src-git helloworld/src-git helloworld/g' feeds.conf.default
+# sed -i 's/#src-git helloworld/src-git helloworld/g' feeds.conf.default
 
 # KPR plus+
 # git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/mine/luci-app-koolproxyR
 
 # Server酱
-git clone https://github.com/tty228/luci-app-serverchan.git package/mine/luci-app-serverchan
+# git clone https://github.com/tty228/luci-app-serverchan.git package/mine/luci-app-serverchan
 
 # FileBrowser
 # git clone https://github.com/project-openwrt/FileBrowser.git package/mine/FileBrowser
@@ -58,7 +58,7 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/mine/luci-ap
 # git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/mine/luci-app-unblockneteasemusic
 
 # OpenClash
-git clone https://github.com/vernesong/OpenClash.git package/mine/OpenClash
+# git clone https://github.com/vernesong/OpenClash.git package/mine/OpenClash
 
 # 网易云音乐GoLang版本
 # git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-go.git package/mine/luci-app-unblockneteasemusic-go
